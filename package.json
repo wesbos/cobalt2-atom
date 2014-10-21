@@ -1,0 +1,11 @@
+{
+  "name": "cobalt2-atom",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A short description of your syntax theme",
+  "repository": "https://github.com/atom/cobalt2-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
