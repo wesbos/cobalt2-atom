@@ -13,10 +13,14 @@ atom-text-editor .gutter, :host .gutter {
 
 atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
-  color: @syntax-gutter-text-color-selected;
+  color: @syntax-gutter-text-color;
 }
 
 atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.folded .icon-right:before, :host .gutter .line-number.folded .icon-right:before, atom-text-editor .fold-marker:after, :host .fold-marker:after {
   color: @syntax-gutter-text-color-selected;
 }
 
