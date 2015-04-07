@@ -72,8 +72,12 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #FFDD00;
 }
 
-.string:not(.string.unquoted.old-plist:not(.string.unquoted.heredoc)), .string.unquoted.heredoc .string {
+.string, .string.unquoted.heredoc .string {
   color: #3AD900;
+}
+
+.string.unquoted.old-plist {
+  color: @syntax-text-color;
 }
 
 .comment {
