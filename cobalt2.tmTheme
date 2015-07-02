@@ -77,7 +77,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -103,7 +103,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -652,9 +652,9 @@
             <string>#FF0000</string>
         </dict>
     </dict>
-    
+
     <!-- PHP -->
-    
+
     <dict>
         <key>name</key>
         <string>PHP class name</string>
@@ -755,7 +755,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -766,7 +766,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -777,7 +777,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -799,7 +799,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFDD00</string>
+        <string>#ffc600</string>
       </dict>
     </dict>
     <dict>
@@ -814,6 +814,76 @@
       </dict>
     </dict>
 
+
+    <!-- Language Specific -->
+
+    <!-- JAVASCRIPT! -->
+    <dict>
+      <key>name</key>
+      <string>JavaScript Function</string>
+      <key>scope</key>
+      <string>storage.type.function.js </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffa5f3</string>
+        <key>background</key>
+        <string>#1d3c52</string>
+      </dict>
+    </dict>
+
+    <dict>
+      <key>name</key>
+      <string>Quotes</string>
+      <key>scope</key>
+      <string>punctuation.definition.string.begin.js, punctuation.definition.string.end.js</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#2eff00</string>
+      </dict>
+    </dict>
+
+
+    <!-- CSS -->
+
+<!--     <dict>
+      <key>name</key>
+      <string>CSS Property Name</string>
+      <key>scope</key>
+      <string>support.type.property-name.css </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffc600</string>
+        <key>background</key>
+        <string>#1d3d53</string>
+      </dict>
+    </dict> -->
+
+    <dict>
+      <key>name</key>
+      <string>CSS colon Divider</string>
+      <key>scope</key>
+      <string>punctuation.separator.key-value.css</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffc600</string>
+      </dict>
+    </dict>
+
+    <dict>
+      <key>name</key>
+      <string>CSS Selector</string>
+      <key>scope</key>
+      <string>source.css meta.selector.css </string>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#214a68</string>
+      </dict>
+    </dict>
   </array>
   <key>uuid</key>
   <string>06CD1FB2-A00A-4F8C-97B2-60E131980454</string>

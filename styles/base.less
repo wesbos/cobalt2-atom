@@ -1,54 +1,63 @@
+@import "mixins";
 @import "syntax-variables";
 
-.editor {
+atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor .gutter {
+atom-text-editor .gutter, :host .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-.editor .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.folded .icon-right:before, :host .gutter .line-number.folded .icon-right:before, atom-text-editor .fold-marker:after, :host .fold-marker:after {
   color: @syntax-gutter-text-color-selected;
 }
 
-.editor .gutter .line-number.cursor-line-no-selection {
-  color: @syntax-gutter-text-color-selected;
-}
-
-.editor .wrap-guide {
+atom-text-editor .wrap-guide, :host .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-.editor .indent-guide {
+atom-text-editor .indent-guide, :host .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-.editor .invisible-character {
+atom-text-editor .invisible-character, :host .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-.editor .search-results .marker .region {
+atom-text-editor .bracket-matcher .region, :host .bracket-matcher .region {
+  border-bottom: 1px solid @syntax-cursor-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-.editor.is-focused .cursor {
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
   border-color: @syntax-cursor-color;
 }
 
-.editor.is-focused .selection .region {
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
   background-color: @syntax-selection-color;
 }
 
-.editor.is-focused .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
   background-color: #1f4662;
 }
 
@@ -61,7 +70,7 @@
 }
 
 .entity {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
 .keyword {
@@ -69,11 +78,15 @@
 }
 
 .storage {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
-.string:not(.string.unquoted.old-plist:not(.string.unquoted.heredoc)), .string.unquoted.heredoc .string {
+.string, .string.unquoted.heredoc .string {
   color: #3AD900;
+}
+
+.string.unquoted.old-plist {
+  color: @syntax-text-color;
 }
 
 .comment {
@@ -86,6 +99,9 @@
 }
 
 .variable {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   color: #CCCCCC;
   background-color: #0d3a58;
 }
@@ -104,6 +120,9 @@
 }
 
 .text .source, .string.unquoted.heredoc, .source .source {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   color: #FFFFFF;
   background-color: #223545;
 }
@@ -274,6 +293,9 @@
 }
 
 .entity.name.function.php {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   background-color: #333333;
 }
 
@@ -302,15 +324,15 @@
 }
 
 .brackethighlighter.curly {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
 .brackethighlighter.round {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
 .brackethighlighter.square {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
 .brackethighlighter.angle {
@@ -318,9 +340,32 @@
 }
 
 .brackethighlighter.quote {
-  color: #FFDD00;
+  color: #ffc600;
 }
 
 .brackethighlighter.unmatched {
   color: #F92672;
+}
+
+.storage.type.function.js {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
+  color: #ffa5f3;
+  background-color: #1d3c52;
+}
+
+.punctuation.definition.string.begin.js, .punctuation.definition.string.end.js {
+  color: #2eff00;
+}
+
+.punctuation.separator.key-value.css {
+  color: #ffc600;
+}
+
+.source.css .meta.selector.css {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
+  background-color: #214a68;
 }
