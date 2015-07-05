@@ -25,6 +25,10 @@ atom-text-editor .gutter .line-number.folded .icon-right:before, :host .gutter .
 }
 
 atom-text-editor .wrap-guide, :host .wrap-guide {
+  // Make text wrap guide semi-transparent so that cursor can show through it
+  .same-color-with-alpha(
+    background-color; @syntax-wrap-guide-color; @syntax-background-color; 0.15
+  ) !important;
   color: @syntax-wrap-guide-color;
 }
 

@@ -9,3 +9,16 @@
         background: transparent;
     }
 }
+
+.same-color-with-alpha(@property; @final-color; @bg-color; @alpha) {
+    // Math taken from http://stackoverflow.com/a/12228643
+    @bg-red: red(@bg-color);
+    @bg-green: green(@bg-color);
+    @bg-blue: blue(@bg-color);
+    @{property}: rgba(
+        ((red(@final-color) - @bg-red + (@bg-red * @alpha)) / @alpha),
+        ((green(@final-color) - @bg-green + (@bg-green * @alpha)) / @alpha),
+        ((blue(@final-color) - @bg-blue + (@bg-blue * @alpha)) / @alpha),
+        @alpha
+    );
+}
