@@ -233,14 +233,23 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.raw {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   background-color: rgba(143, 221, 246, 0.19);
 }
 
 .markup.quote {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   background-color: #004480;
 }
 
 .markup.list {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   background-color: #130D26;
 }
 
@@ -255,6 +264,9 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.heading {
+  .clear-background-on-current-line();
+  .clear-background-on-selection();
+
   font-weight: bold;
   color: #C8E4FD;
   background-color: #001221;
