@@ -1,3 +1,7 @@
+## 0.2.0
+* Added better styling for text search results
+* Added styling for [highlight-selected](https://atom.io/packages/highlight-selected) word highlights
+
 ## 0.1.2
 * Fixed bug where backgrounds in Markdown files didn't clear on selection/current line
 
