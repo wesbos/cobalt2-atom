@@ -1,7 +1,7 @@
 {
   "name": "cobalt2-syntax",
   "theme": "syntax",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "An Atom theme based on our old blue friend cobalt.",
   "repository": "https://github.com/wesbos/cobalt2-atom",
   "license": "MIT",
