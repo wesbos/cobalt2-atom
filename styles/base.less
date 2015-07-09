@@ -44,7 +44,12 @@ atom-text-editor .bracket-matcher .region, :host .bracket-matcher .region {
   border-bottom: 1px solid @syntax-cursor-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+// Use a hack to increase specificity so that we override the default color
+// included with the highlight-selected package.
+atom-text-editor .highlights .highlight-selected .region.region.region, :host .highlights .highlight-selected .region.region.region {
+  border-color: @syntax-result-marker-color;
+}
+
 atom-text-editor .find-result .region, :host .find-result .region {
   background-color: transparent;
   border-color: @syntax-result-marker-color;
