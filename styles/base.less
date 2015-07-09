@@ -45,12 +45,15 @@ atom-text-editor .bracket-matcher .region, :host .bracket-matcher .region {
 }
 
 atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .find-result .region, :host .find-result .region {
   background-color: transparent;
-  border: @syntax-result-marker-color;
+  border-color: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
-  border: @syntax-result-marker-color-selected;
+atom-text-editor .current-result .region, :host .current-result .region {
+  border-color: @syntax-result-marker-color-selected;
+  // Bump up z-index so that the border shows up over the selection background
+  z-index: 0;
 }
 
 atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
