@@ -1,3 +1,6 @@
+## 0.2.1
+* Added keywords to package so it's easier for people to find
+
 ## 0.2.0
 * Added better styling for text search results
 * Added styling for [highlight-selected](https://atom.io/packages/highlight-selected) word highlights
