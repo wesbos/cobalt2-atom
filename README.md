@@ -1,6 +1,6 @@
 # Cobalt2 Syntax
 
-Cobalt 2 - the Sublime Text theme, ported to Atom!
+Cobalt2 - the Sublime Text theme, ported to Atom!
 
 An Atom syntax theme based on our old blue friend cobalt. A refined colour scheme that is easy on the eyes.
 
