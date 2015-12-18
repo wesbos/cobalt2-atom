@@ -582,6 +582,17 @@
     </dict>
     <dict>
         <key>name</key>
+        <string>SublimeLinter Error</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.error</string>
+        <key>settings</key>
+        <dict>
+            <key>foreground</key>
+            <string>#DA2000</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
         <string>SublimeLinter Error Outline</string>
         <key>scope</key>
         <string>sublimelinter.outline.illegal</string>
@@ -602,6 +613,28 @@
         <dict>
             <key>background</key>
             <string>#FF0000</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Gutter Mark</string>
+        <key>scope</key>
+        <string>sublimelinter.gutter-mark</string>
+        <key>settings</key>
+        <dict>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Warning</string>
+        <key>scope</key>
+        <string>sublimelinter.mark.warning</string>
+        <key>settings</key>
+        <dict>
+            <key>foreground</key>
+            <string>#EDBA00</string>
         </dict>
     </dict>
     <dict>
@@ -873,17 +906,6 @@
       </dict>
     </dict>
 
-    <dict>
-      <key>name</key>
-      <string>CSS Selector</string>
-      <key>scope</key>
-      <string>source.css meta.selector.css </string>
-      <key>settings</key>
-      <dict>
-        <key>background</key>
-        <string>#214a68</string>
-      </dict>
-    </dict>
   </array>
   <key>uuid</key>
   <string>06CD1FB2-A00A-4F8C-97B2-60E131980454</string>
