@@ -1,3 +1,7 @@
+## 0.2.2
+* Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
+  * Remove the special background color behind CSS selectors
+
 ## 0.2.1
 * Added keywords to package so it's easier for people to find
 
