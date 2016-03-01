@@ -1,4 +1,4 @@
-## 0.2.2
+## 0.3.0
 * Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
   * Remove the special background color behind CSS selectors
 
