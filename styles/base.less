@@ -126,6 +126,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #FFEE80;
 }
 
+.meta.function-call .entity.function {
+  color: #CCCCCC;
+}
+
 .invalid {
   color: #F8F8F8;
   background-color: #800F00;
@@ -150,6 +154,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .string .constant {
   color: #80FF82;
+}
+
+.constant .string {
+  color: #80FFC2;
 }
 
 .string.regexp {
@@ -184,8 +192,12 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #73817D;
 }
 
-.meta.tag, .meta.tag .entity {
+.meta.tag .entity {
   color: #9EFFFF;
+}
+
+.meta.tag .entity.other.attribute-name {
+  color: #ffc600;
 }
 
 .meta.selector.css .entity.name.tag {
@@ -385,4 +397,12 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .punctuation.separator.key-value.css {
   color: #ffc600;
+}
+
+.storage.type.class.js {
+  color: #FF9D00;
+}
+
+.entity.name.class.js {
+  color: #FF80E1;
 }
