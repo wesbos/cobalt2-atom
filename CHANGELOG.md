@@ -1,3 +1,6 @@
+## 0.3.1
+* Fix bug where bracket match styling didn't show on current line [#9](https://github.com/wesbos/cobalt2-atom/issues/9)
+
 ## 0.3.0
 * Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
   * Remove the special background color behind CSS selectors
