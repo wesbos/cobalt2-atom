@@ -1,5 +1,8 @@
+## 0.3.2
+* Make HTML/XML/JSX (w/ [language-babel](https://atom.io/packages/language-babel)) brackets white to match [Sublime Text version](https://github.com/wesbos/cobalt2) ([#10](https://github.com/wesbos/cobalt2-atom/issues/10))
+
 ## 0.3.1
-* Fix bug where bracket match styling didn't show on current line [#9](https://github.com/wesbos/cobalt2-atom/issues/9)
+* Fix bug where bracket match styling didn't show on current line ([#9](https://github.com/wesbos/cobalt2-atom/issues/9))
 
 ## 0.3.0
 * Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
