@@ -1,3 +1,14 @@
+## 0.4.0
+* Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
+  * Update markdown styles
+  * Add italic HTML attributes
+  * Update ES6 classes
+  * Make JS object keys minty (w/ [language-babel](https://atom.io/packages/language-babel))
+  * Take dusty blue background off embedded script tags
+  * Fix styling of PHP class names
+* Remove comment styling from Markdown blockquotes
+* Fix color of parentheses in function call
+
 ## 0.3.2
 * Make HTML/XML/JSX (w/ [language-babel](https://atom.io/packages/language-babel)) brackets white to match [Sublime Text version](https://github.com/wesbos/cobalt2) ([#10](https://github.com/wesbos/cobalt2-atom/issues/10))
 
