@@ -45,7 +45,7 @@
       <key>name</key>
       <string>Punctuation</string>
       <key>scope</key>
-      <string>punctuation - (punctuation.definition.string punctuation.definition.comment)</string>
+      <string>punctuation - (punctuation.definition.string || punctuation.definition.comment)</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
@@ -196,21 +196,6 @@
         <string>#800F00</string>
         <key>foreground</key>
         <string>#F8F8F8</string>
-      </dict>
-    </dict>
-    <dict>
-      <key>name</key>
-      <string>Embedded Source</string>
-      <key>scope</key>
-      <string>text source, string.unquoted.heredoc, source source</string>
-      <key>settings</key>
-      <dict>
-        <key>background</key>
-        <string>#223545</string>
-        <key>fontStyle</key>
-        <string></string>
-        <key>foreground</key>
-        <string>#FFFFFF</string>
       </dict>
     </dict>
     <dict>
@@ -523,7 +508,7 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#130D26</string>
+        <string>#1D425D</string>
       </dict>
     </dict>
     <dict>
@@ -692,7 +677,10 @@
         <key>name</key>
         <string>PHP class name</string>
         <key>scope</key>
-        <string>entity.name.type.class.php</string>
+        <string>
+          , entity.name.class.php, 
+          , entity.name.type.class.php,
+        </string>
         <key>settings</key>
         <dict>
             <key>foreground</key>
@@ -877,22 +865,66 @@
       </dict>
     </dict>
 
+   <dict>
+     <key>name</key>
+     <string>Object Keys</string>
+     <key>scope</key>
+     <string>
+      , string.unquoted.label.js, 
+      , meta.object-literal.key.js -string,
+     </string>
+     <key>settings</key>
+     <dict>
+       <key>foreground</key>
+       <string>#2AFFDF</string>
+     </dict>
+   </dict>
 
-    <!-- CSS -->
+  <!--
+    ES6 Classes
+   -->
 
-<!--     <dict>
-      <key>name</key>
-      <string>CSS Property Name</string>
-      <key>scope</key>
-      <string>support.type.property-name.css </string>
-      <key>settings</key>
-      <dict>
-        <key>foreground</key>
-        <string>#ffc600</string>
-        <key>background</key>
-        <string>#1d3d53</string>
-      </dict>
-    </dict> -->
+   <dict>
+     <key>name</key>
+     <string>Class Name</string>
+     <key>scope</key>
+     <string>
+      , entity.name.class.js, 
+      , entity.name.type.class.js,
+     </string>
+     <key>settings</key>
+     <dict>
+       <key>foreground</key>
+       <string>#FB94FF</string>
+     </dict>
+   </dict>
+
+   <dict>
+     <key>name</key>
+     <string>Class KeyWord</string>
+     <key>scope</key>
+     <string>storage.type.class.js</string>
+     <key>settings</key>
+     <dict>
+       <key>foreground</key>
+       <string>#FF9D00</string>
+     </dict>
+   </dict>
+
+   <dict>
+     <key>name</key>
+     <string>Extends</string>
+     <key>scope</key>
+     <string>
+      , storage.type.extends.js,
+      , storage.modifier.extends.js,
+     </string>
+     <key>settings</key>
+     <dict>
+       <key>fontStyle</key>
+       <string>italic</string>
+     </dict>
+   </dict>
 
     <dict>
       <key>name</key>
@@ -903,6 +935,82 @@
       <dict>
         <key>foreground</key>
         <string>#ffc600</string>
+      </dict>
+    </dict>
+
+    <dict>
+      <key>name</key>
+      <string>BEM Modifier Invalid HTML Comment</string>
+      <key>scope</key>
+      <string>invalid.illegal.bad-comments-or-CDATA.html</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#0088FF</string>
+        <key>background</key>
+        <string>#17344A</string>
+      </dict>
+    </dict>
+
+    <!--
+      Markdown Tweaks
+     -->
+    <dict>
+      <key>name</key>
+      <string>Markdown Punctuation</string>
+      <key>scope</key>
+      <string>
+        , punctuation.definition.list_item.markdown,
+        , punctuation.definition.blockquote.markdown,
+        , punctuation.definition.string.begin.markdown,
+        , punctuation.definition.string.end.markdown,
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffc600</string>
+      </dict>
+    </dict>
+
+    <dict>
+      <key>name</key>
+      <string>Markdown Punctuation</string>
+      <key>scope</key>
+      <string>
+        , markup.underline.link.image.markdown,
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffc600</string>
+        <key>fontStyle</key>
+        <string>italic</string>
+      </dict>
+    </dict>
+
+    <!--
+      Operator Tweaks
+      This makes all attributes italic
+     -->
+
+    <dict>
+      <key>name</key>
+      <string>Italic HTML attribute names</string>
+      <key>scope</key>
+      <string>
+        , entity.other.attribute-name.html,
+        , entity.other.attribute-name.event.html,
+        , entity.other.attribute-name.id.html,
+        , entity.other.attribute-name.tag.jade,
+        , constant.other.symbol.ruby,
+        , entity.other.attribute-name.jsx,
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffc600</string>
+        <key>fontStyle</key>
+        <string>italic</string>
       </dict>
     </dict>
 

@@ -133,14 +133,6 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   background-color: #800F00;
 }
 
-.text .source, .string.unquoted.heredoc, .source .source {
-  .clear-background-on-current-line();
-  .clear-background-on-selection();
-
-  color: #FFFFFF;
-  background-color: #223545;
-}
-
 .entity.other.inherited-class {
   font-style: italic;
   color: #80FCFF;
@@ -264,7 +256,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   .clear-background-on-current-line();
   .clear-background-on-selection();
 
-  background-color: #130D26;
+  background-color: #1D425D;
 }
 
 .markup.bold {
@@ -291,6 +283,10 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   background-color: #FFFFAA;
 }
 
+.sublimelinter.mark.error {
+  color: #DA2000;
+}
+
 .sublimelinter.outline.illegal {
   color: #FFFFFF;
   background-color: #FF4A52;
@@ -298,6 +294,14 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .sublimelinter.underline.illegal {
   background-color: #FF0000;
+}
+
+.sublimelinter.gutter-mark {
+  color: #FFFFFF;
+}
+
+.sublimelinter.mark.warning {
+  color: #EDBA00;
 }
 
 .sublimelinter.outline.warning {
@@ -318,7 +322,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   background-color: #FF0000;
 }
 
-.entity.name.type.class.php {
+.entity.name.class.php, .entity.name.type.class.php {
   color: #80FFC2;
 }
 
@@ -389,6 +393,41 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #2eff00;
 }
 
+.object.key.js .string.unquoted.js {
+  color: #2AFFDF;
+}
+
+.entity.name.class.js, .entity.name.type.class.js {
+  color: #FB94FF;
+}
+
+.storage.type.class.js {
+  color: #FF9D00;
+}
+
+.storage.type.extends.js, .storage.modifier.extends.js {
+  font-style: italic;
+}
+
 .punctuation.separator.key-value.css {
+  color: #ffc600;
+}
+
+.variable.unordered.list.gfm, .support.quote.gfm {
+  color: #ffc600;
+}
+
+.markup.underline.link.gfm {
+  font-style: italic;
+  color: #FF628C;
+}
+
+.markup.underline.link.gfm .punctuation.definition.gfm {
+  color: @syntax-text-color;
+  font-style: normal;
+}
+
+.entity.other.attribute-name.html, .entity.other.attribute-name.event.html, .entity.other.attribute-name.id.html, .entity.other.attribute-name.tag.jade, .constant.other.symbol.ruby, .entity.other.attribute-name.jsx {
+  font-style: italic;
   color: #ffc600;
 }
