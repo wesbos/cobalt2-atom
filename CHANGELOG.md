@@ -1,3 +1,6 @@
+## 0.5.0
+* Make fully-compatible with [Shadow DOM removal in Atom 1.13](http://blog.atom.io/2016/11/14/removing-shadow-dom-boundary-from-text-editor-elements.html)
+
 ## 0.4.0
 * Match latest changes in [Sublime Text version](https://github.com/wesbos/cobalt2)
   * Update markdown styles
