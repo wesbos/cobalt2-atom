@@ -6,7 +6,7 @@
   "repository": "https://github.com/wesbos/cobalt2-atom",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0"
+    "atom": ">=1.13 <2.0.0"
   },
   "keywords": [
     "cobalt",
