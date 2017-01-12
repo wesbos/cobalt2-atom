@@ -1,3 +1,6 @@
+## 0.5.1
+* Fix colors for JSX nested elements ([#13](https://github.com/wesbos/cobalt2-atom/pull/13))
+
 ## 0.5.0
 * Make fully-compatible with [Shadow DOM removal in Atom 1.13](http://blog.atom.io/2016/11/14/removing-shadow-dom-boundary-from-text-editor-elements.html)
 
