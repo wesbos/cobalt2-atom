@@ -1,3 +1,6 @@
+## 0.5.2
+* Fix bug where bracket match styling didn't show on current line ([#15](https://github.com/wesbos/cobalt2-atom/issues/15))
+
 ## 0.5.1
 * Fix colors for JSX nested elements ([#13](https://github.com/wesbos/cobalt2-atom/pull/13))
 
