@@ -41,10 +41,6 @@ atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .highlights {
-  z-index: 1;
-}
-
 atom-text-editor .bracket-matcher .region {
   border-bottom: 1px solid @syntax-cursor-color;
   // Bump up z-index so that the border shows up over the current line background
@@ -78,7 +74,9 @@ atom-text-editor.is-focused .selection .region {
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
 atom-text-editor.is-focused .line.cursor-line {
-  background-color: #1f4662;
+  .same-color-with-alpha(
+    background-color; #1f4662; @syntax-background-color; 0.15
+  );
 }
 
 .syntax--punctuation:not(.syntax--punctuation.syntax--definition.syntax--string .syntax--punctuation.syntax--definition.syntax--comment) {
