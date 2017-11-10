@@ -1,3 +1,6 @@
+## 0.5.3
+* Fix bug where text selection hid all selected text ([#16](https://github.com/wesbos/cobalt2-atom/issues/16))
+
 ## 0.5.2
 * Fix bug where bracket match styling didn't show on current line ([#15](https://github.com/wesbos/cobalt2-atom/issues/15))
 
